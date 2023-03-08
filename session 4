@@ -1,0 +1,38 @@
+name1 = input("name1: ")
+age1 = int(input("age1: "))
+name2 = input("name2: ")
+age2 = int(input("age2: "))
+name3 = input("name3: ")
+age3 = int(input("age3: "))
+
+
+myDictionary = {
+    name1: age1,
+    name2: age2,
+    name3: age3
+}
+
+if age1 > age2:
+    if age1 > age3:
+        print(name1)
+    elif age1 == age3:
+        print(name1,name3)
+
+elif age1 == age2:
+    if age1 > age3:
+        print(name1,name2)
+
+    elif age3 == age1:
+        print(name1,name2,name3)
+
+if age2 > age1:
+    if age2 > age3:
+        print(name2)
+
+if age3 > age2:
+    if age3 > age1:
+        print(name3)
+
+if age3 == age2:
+    if age3 > age1:
+        print(name2,name3)
