@@ -1,0 +1,10 @@
+num1 = "56778.4"
+num2 = "1346"
+
+num1 = float(num1)
+
+num2 = int(num2)
+x = num1/num2
+print(round(x,2))
+print(int(num1/num2))
+print(int(num1%num2))
