@@ -1,0 +1,16 @@
+set1 = {1,2,3,4,5,6,7,8,9,10}
+list1 = list(set1)
+list1.pop(2)
+list1.pop(7)
+list1.pop(-1)
+list1.pop(3)
+list2 = [5,4,6,7]
+list1 = list2 + list1
+print(list1)
+print(list1[3:6])
+set1 = set(list1)
+print(set1)
+set1.clear()
+text1 = "In my shoes just to see What it's like to be me I'll be you, let's trade shoes Just to see what it'd be like to"
+list3 = text1.split()
+print(list3)
