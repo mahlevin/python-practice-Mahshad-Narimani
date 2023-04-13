@@ -39,3 +39,26 @@ def myfunction(m):
 myfunction(m)
 
 ##4
+
+def myfunction1(m):
+    while len(m) > 1:
+        if m[0] > m[1]:
+             m.pop(1)
+        elif m[0] < m[1]:
+            m.pop(0)
+    print(m[0])
+
+def myfunction3(m):
+    m = int(m)
+    counter = 1
+    for i in range(1, m + 1):
+        counter = counter * i
+    print(counter)
+
+def myfunction4(h,m):
+    if h==0:
+        print(myfunction3(m))
+    elif h==1:
+        print(myfunction1(m))
+myfunction4(0,4)
+myfunction4(1,[4,2,7,8,12,90,23])
